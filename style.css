@@ -1,70 +1,98 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: purple
+}
+
+.page {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    background-color: #eee;
-}
-
-.login-container {
-    background-color: #fff;
-    padding: 3em;
+    align-content: center;
+    justify-content: center;
     width: 100%;
-    max-width: 300px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    height: 500px;
+    height: 100vh;
+    background-color: rgb(243, 239, 242);
 }
 
-h1 {
-    text-align: center;
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 223, 245);
+    border-radius: 7px;
+    padding: 40px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    gap: 5px
+}
+
+.areaLogin img {
+    width: 420px;
+}
+
+.formLogin h1 {
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.3em;
+}
+
+.formLogin p {
+    display: inline-block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.formLogin input {
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 4px;
+    transition: all linear 160ms;
+    outline: none;
+}
+
+.formLogin input:focus {
+    border: 1px solid #f72585;
+}
+
+.formLogin label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.formLogin a {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #555;
+    transition: all linear 160ms;
+}
+
+.formLogin a:hover {
     color: purple;
+}
+
+.btn {
+    background-color: purple;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border: none !important;
+    transition: all linear 160ms;
+    cursor: pointer;
+    margin: 0 !important;
 
 }
 
-.imput-container {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
+.btn:hover {
+    transform: scale(1.05);
+    background-color: purple;
 
-    }
+}
 
-    label {
-        font-weight: bold;
-    }
 
-    imput{
-        padding: 0.8em;
-        border: none;
-        border-radius: 5px;
-        outline: none;
-        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    }
 
-    button {
-        padding: 1em;
-        border: none;
-        border-radius: 5px;
-        background-color: purple;
-        color: #fff;
-        cursor: pointer;
-        transition: 0.3s;
-    }
-
-    button:hover{
-        background-color: darkviolet;
-    }
-
-    a{
-        text-align: center;
-        color: purple;
-        text-decoration: nome;
-    }
-
-    a:hover{
-        text-decoration: underline;
-    }
